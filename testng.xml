@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Users/volna/IdeaProjects/LearningSeleniumJava">
+<!--    thread-count="2" - Количество потоков    -->
+<!--    parallel="methods" - Параллельный запуск методов   -->
+    <test verbose="1" thread-count="2" parallel="methods" name="C:/Users/volna/IdeaProjects/LearningSeleniumJava">
         <classes>
-            <class name="com.tmd.tests.HomepageTests">
-                <methods>
-                    <include name="test3"/>
-                </methods>
-            </class>
             <class name="com.tmd.tests.LoginPageTests">
                 <methods>
                     <include name="test2"/>
+                </methods>
+            </class>
+            <class name="com.tmd.tests.HomepageTests">
+                <methods>
+                    <include name="test3"/>
                 </methods>
             </class>
         </classes>
